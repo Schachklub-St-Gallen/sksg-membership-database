@@ -5,30 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MembersComponent } from './members/members.component';
-import {MatTableModule} from "@angular/material/table";
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatInputModule} from "@angular/material/input";
-import {MatPaginatorModule} from "@angular/material/paginator";
-import {MatSortModule} from "@angular/material/sort";
+import { HeaderComponent } from './navigation/header/header.component';
+import { LayoutComponent } from './layout/layout.component';
+import {MaterialModule} from "./material/material.module";
+import { HomeComponent } from './home/home.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MembersComponent
+    MembersComponent,
+    HeaderComponent,
+    LayoutComponent,
+    HomeComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule,
-    MatButtonModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatSortModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
